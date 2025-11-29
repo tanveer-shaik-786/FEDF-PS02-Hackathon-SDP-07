@@ -1,0 +1,27 @@
+import { createContext } from 'react';
+
+export const AppContext = createContext({
+  cart: [],
+  addToCart: () => {},
+  removeFromCart: () => {},
+  clearCart: () => {},
+  wishlist: [],
+  addToWishlist: () => {},
+  removeFromWishlist: () => {},
+  user: null,
+  login: () => {},
+  logout: () => {},
+  theme: 'light',
+  setTheme: () => {},
+  font: 'system',
+  setFont: () => {},
+  orders: [],
+  addOrder: () => {},
+  suggestions: [],
+  addSuggestion: () => {},
+  updateSuggestion: () => {},
+  items: [],
+  updateItemStock: () => {},
+  addItem: () => {},
+  updateItem: () => {},
+});
